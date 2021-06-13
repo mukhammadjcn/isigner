@@ -1,0 +1,240 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  list-style-type: none;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  background: aliceblue;
+  padding: 60px 30px;
+}
+
+.music {
+  background-color: #fff;
+  display: inline-block;
+  padding: 20px;
+  -webkit-box-shadow: 0px 4px 100px rgba(74, 148, 154, 0.1);
+          box-shadow: 0px 4px 100px rgba(74, 148, 154, 0.1);
+  border-radius: 30px;
+}
+
+.music-img img {
+  border-radius: 20px;
+}
+
+.music-information {
+  padding-top: 20px;
+}
+
+.music-information .music-title {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  color: #362A43;
+}
+
+.music-information .music-label {
+  padding-top: 16px;
+}
+
+.music-information .music-label__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.music-information .music-label__item .name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: #464646;
+}
+
+.music-information .music-label__item .propertie {
+  font-size: 16px;
+  line-height: 30px;
+  text-align: right;
+  color: #464646;
+}
+
+.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 60px 20px 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  gap: 60px;
+}
+
+.show-img {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+}
+
+.show-information {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.show-information .show-title {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 33px;
+  color: #362A43;
+}
+
+.show-information .show-time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 60px;
+  padding-top: 22px;
+}
+
+.show-information .show-time .name {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 28px;
+  color: #464646;
+}
+
+.show-information .show-time .propertie {
+  font-size: 15px;
+  line-height: 28px;
+  color: #464646;
+}
+
+.show-order {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+
+.show-order-title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #362A43;
+  text-align: end;
+}
+
+.show-order-title .show_number {
+  display: inline-block;
+  padding: 0 6px;
+}
+
+.show-order .show-buttons {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 16px;
+  padding-top: 22px;
+}
+
+.show-order .show-buttons button {
+  padding: 14px 34px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  border-radius: 6px;
+  border: none;
+}
+
+.show-order .show-buttons .buy {
+  background: #B48FDB;
+}
+
+.show-order .show-buttons .reserve {
+  background: #84DCE3;
+  padding: 14px 40px;
+}
+
+.video {
+  padding: 20px 40px 20px 20px;
+  background-color: #fff;
+  border-radius: 30px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  gap: 30px;
+}
+
+.video-information .video-title {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 34px;
+  color: #362A43;
+  padding-bottom: 30px;
+}
+
+.video-information .video-label {
+  padding-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 20px;
+  line-height: 30px;
+  color: #464646;
+}
+
+.video-information .video-label hr {
+  margin: 4px 16px;
+  border-left: solid;
+  border-top-width: 0;
+  border-left-width: 2px;
+  border-right-width: 0;
+  border-bottom-width: 0;
+  border-color: #c1c1c1;
+}
+
+.video-information .video-label svg {
+  vertical-align: text-bottom;
+  margin-right: 8px;
+}
+
+.event {
+  width: 255px;
+  background-color: #fff;
+  padding: 30px 20px;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+.event-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #362A43;
+  padding: 30px 0 20px;
+}
+
+.event-prg {
+  font-size: 16px;
+  line-height: 26px;
+  color: #464646;
+}
+/*# sourceMappingURL=main.css.map */
