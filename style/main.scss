@@ -428,3 +428,9 @@ body{
         transform: scale(1);
     } 
 }
+
+@media (max-width:576px){
+    .container{
+        width: 90%;
+    }
+}

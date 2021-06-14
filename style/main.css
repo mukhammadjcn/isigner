@@ -119,6 +119,10 @@ body {
       flex-basis: 20%;
 }
 
+.show-img img {
+  border-radius: 24px;
+}
+
 .show-information {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
@@ -220,6 +224,10 @@ body {
   -webkit-box-shadow: 0px 4px 100px rgba(74, 148, 154, 0.1);
           box-shadow: 0px 4px 100px rgba(74, 148, 154, 0.1);
   gap: 30px;
+}
+
+.video img {
+  border-radius: 24px;
 }
 
 .video-information .video-title {
@@ -1084,6 +1092,12 @@ body {
   100% {
     -webkit-transform: scale(1);
             transform: scale(1);
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: 90%;
   }
 }
 /*# sourceMappingURL=main.css.map */
