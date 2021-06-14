@@ -5,10 +5,30 @@
     text-decoration-line: none;
     list-style-type: none;
 }
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap');
+
 body{
     font-family: 'Rubik', sans-serif;
     background: aliceblue;
     padding: 60px 30px;
+}
+.social-links{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    transition: 0.2s ease-in-out;
+    .social-link:nth-child(1):hover svg path{
+        fill: #1873EB;
+    }
+    .social-link:nth-child(2):hover svg path{
+        fill: #009DED ;
+    }
+    .social-link:nth-child(3):hover svg path{
+        fill:#B7081B;
+    }
+    .social-link:nth-child(4):hover svg path{
+        fill: #4782C6;
+    }
 }
 
 // Music
@@ -83,7 +103,7 @@ body{
                 font-weight: 500;
                 font-size: 15px;
                 line-height: 28px;
-                color: #464646;
+                color: #464646;                
             }
             .propertie{
                 font-size: 15px;
@@ -110,6 +130,7 @@ body{
             display: flex;
             gap: 16px;
             padding-top: 22px;
+            transition: 0.3s ease-in-out;
             button{
                 padding: 14px 34px;
                 color: #fff;
@@ -118,6 +139,9 @@ body{
                 line-height: 22px;
                 border-radius: 6px;
                 border: none;
+                &:hover{
+                    opacity: 0.8;
+                }
             }
             .buy{
                 background: #B48FDB;
@@ -190,3 +214,94 @@ body{
 
 }
 
+//member
+.member{
+    display: inline-block;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 100px rgba(74, 148, 154, 0.15);
+    border-radius: 30px;
+    &-img{
+        img{
+            border-radius: 30px;
+        }
+    }
+    &-information{
+        font-family: 'Merriweather', serif;
+        padding: 24px 0;
+        text-align: center;
+        .member-title{
+            font-weight: 500;
+            font-size: 26px;
+            line-height: 34px;
+            color: #362A43;
+        }
+        .member-position{
+            font-family: 'Rubik';
+            font-size: 14px;
+            padding: 14px 0;
+            line-height: 21px;
+            color: rgba(54, 42, 67, 0.6);
+        }
+        .social-links{
+            justify-content: center;
+        }
+    }
+}
+
+//article
+.article{
+    display: inline-block;
+    width: 540px;
+    padding: 20px 20px 30px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 100px rgba(74, 148, 154, 0.1);
+    border-radius: 30px;
+    &-img{
+        img{
+            border-radius: 20px;
+        }
+    }
+    &-information{
+        padding-top: 20px;
+        .article-date{
+            display: flex;
+            hr{
+                margin: 4px 16px;
+                border-left: solid;
+                border-top-width: 0;
+                border-left-width: 2px;
+                border-right-width: 0;
+                border-bottom-width: 0;
+                border-color: #c1c1c1;
+            }
+            svg{
+                vertical-align: text-bottom;
+            }
+        }
+        .article-title{
+            font-weight: bold;
+            font-size: 24px;
+            font-family: 'Merriweather', serif;
+            line-height: 31px;
+            color: #362A43;
+            padding-top: 20px;
+        }
+        .article-prg{
+            padding: 20px 0;
+            font-family: 'Rubik';
+            font-size: 16px;
+            line-height: 28px;
+            color: rgba(54, 42, 67, 0.8);
+        }
+        .read-more{
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 28px;
+            color: #362A43;
+            svg{
+                vertical-align: text-top;
+                margin-left: 6px;
+            }
+        }
+    }
+}
