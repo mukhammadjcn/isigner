@@ -1,1 +1,430 @@
 @import './component';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+//initials
+body{
+    background: #fff;
+    padding: 0;
+}
+.container{
+    max-width: 1280px;
+    margin: auto;
+}
+.section-prg{
+    font-family: 'Poppins';
+    font-size: 16px;
+    line-height: 26px;
+    color: #464646;
+}
+.section-title{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 57px;
+    color: #362A43;
+}
+.box{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.release-bg{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    width: 50%;
+    height: 100%;
+}
+
+
+//Header
+.header{
+    padding: 20px 60px;
+    align-items: center;
+    position: fixed; 
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+    background: #fff;
+    z-index: 2;
+}
+.navbar{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    gap: 20px;
+    .nav-link{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        color: #362A43;
+        &::after{
+            content: '';
+            width: 0%;
+            height: 2px;
+            display: block;
+            margin: auto;
+            transition: 0.3s ease-in-out;
+            background-color: #362A43;
+        }
+        &:hover::after{
+            width: 100%;
+        }
+    }
+}
+
+// Intro
+.intro{
+    padding: 100px 0;
+    .container{
+        display: flex;
+        align-items: center;
+        .intro-text{
+            flex-basis: 40%;
+            .intro-title{
+                font-weight: 900;
+                font-size: 72px;
+                line-height: 72px;
+                color: #362A43;
+            }
+            .section-prg{
+                padding: 24px 0 34px;
+            }
+            .contact-me{
+                padding: 25px 0px 25px 40px;
+                font-family: 'Poppins';
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 21px;
+                color: #FFFFFF;
+                background: #B48FDB;
+                border-radius: 10px;
+                display: inline-block;
+                span{
+                    padding: 26px 30px;
+                    background: #FFB3C9;
+                    border-radius: 10px; 
+                    margin-left: 40px;   
+                }
+            }
+        }
+        .intro-img{
+            flex-basis: 60%;
+            position: relative;
+            text-align:end;
+            .big-ellipce{
+                position: absolute;
+                top: 0;
+                left: 140px;
+                z-index: -1;
+            }
+            .mini-ellipce{
+                position: absolute;
+                left: 40px;
+                top: 150px;
+                z-index: -1;
+            }
+            .music-icon-1{
+                position: absolute;
+                top: 0;
+                right: 130px;
+            }
+            .music-icon-2{
+                position: absolute;
+                top: 150px;
+                right: 0;
+            }
+        }
+    }
+}
+
+//Music Release
+.release{
+    padding: 60px 0;
+    position: relative;
+    .release-bg{
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+        width: 50%;
+        height: 100%;
+    }
+    .release-note{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .section-prg{
+            flex-basis: 40%;
+            padding: 16px 0;
+            .release-buttons{
+                display: flex;
+                gap: 20px;
+                a svg{
+                    background-image:url('../images/Ellipse\ 33.png') ;
+                }
+            }
+        }
+    }
+    .box{
+        padding: 30px 0;
+    }
+}
+
+//About me
+.about-me{
+    padding: 60px 0;
+    display: flex;
+    align-items: center;
+    .about-img{
+        flex-basis: 50%;
+        position: relative;
+        text-align: center;
+        .about-bg-1{
+            position: absolute;
+            left: 0;
+            bottom: 4px;
+            z-index: -2;
+        }
+        .about-bg-2{
+            position: absolute;
+            left: 30px;
+            bottom: 4px;
+            z-index: -1;
+        }
+    }
+    .about-text{
+        flex-basis: 60%;
+        .section-prg{
+            padding: 16px 0;
+            width: 80%;
+        }
+    }
+}
+
+//Upcoming events
+.shows{
+    padding: 60px 0;
+    .section-prg, .section-title{
+        text-align: center;
+    }
+    .section-prg{
+        padding: 12px 0;
+        width: 40%;
+        margin: auto;
+    }
+    .box{
+        justify-content: center;
+        padding: 30px 0;
+    }
+    .show{
+        align-items: flex-end;
+    }
+}
+
+//Latest videos
+.videos{
+    padding: 60px 0;
+    .section-prg, .section-title{
+        text-align: center;
+    }
+    .section-prg{
+        padding: 12px 0;
+        width: 40%;
+        margin: auto;
+        padding: 14px 0 24px;
+    }
+    .box{
+        justify-content: space-between;
+        padding: 20px 0;
+        .video-main{
+            flex-basis: 50%;
+            .video{
+                flex-direction: column;
+                img{
+                    border-radius: 30px;
+                }
+                .video-information{
+                    padding: 0 10px;
+                }
+            }
+        }
+        .video-all{
+            flex-basis: 46%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            .video{
+                display: inline-flex;
+            }
+        }
+    }
+}
+
+//Where I do work
+.work{
+    position: relative;
+    padding: 60px 0;
+    .section-prg, .section-title{
+        text-align: center;
+    }
+    .section-prg{
+        padding: 12px 0;
+        width: 40%;
+        margin: auto;
+        padding: 14px 0 24px;
+    }
+    .box{
+        justify-content: center;
+        padding: 40px 0;
+    }
+    .work-buttons{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+}
+
+//Team
+.team{
+    padding: 60px 0;
+    .section-prg, .section-title{
+        text-align: center;
+    }
+    .section-prg{
+        padding: 12px 0;
+        width: 40%;
+        margin: auto;
+        padding: 14px 0 24px;
+    }
+    .box{
+        justify-content: center;
+        padding: 40px 0;
+    }
+}
+
+//Blogs
+.blogs{
+    padding: 60px 0;
+    position: relative;
+    .release-bg{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 50%;
+        height: 100%;
+    }
+    .release-note{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .section-prg{
+            flex-basis: 40%;
+            padding: 16px 0;
+            .release-buttons{
+                display: flex;
+                gap: 20px;
+                a svg{
+                    background-image:url('../images/Ellipse\ 33.png') ;
+                }
+            }
+        }
+    }
+    .box{
+        justify-content: space-between;
+        padding: 40px 0;
+        .article{
+            flex-basis: 30%;
+            width: initial;
+        }
+        .read-more{
+            svg{
+                transition: 0.3s ease-in-out;
+            }
+            &:hover svg{
+                margin-left: 20px;
+            }
+        }
+    }
+}
+
+//Clients
+.clients{
+    padding: 60px 0;
+    .section-prg, .section-title{
+        text-align: center;
+    }
+    .section-prg{
+        padding: 12px 0;
+        width: 40%;
+        margin: auto;
+        padding: 14px 0 24px;
+    }
+    .box{
+        justify-content: space-between;
+        padding: 40px 0;
+    }
+}
+
+//newslletters
+.newsletters{
+    padding: 60px 0;
+}
+
+//Footer
+.footer{
+    padding: 60px 0 0;
+    .footer-links{
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer-info{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 40px 0 60px;
+        p{
+            flex-basis: 40%;
+        }
+        .email-me{
+            text-align: end;
+        }
+    }
+    hr{
+        border-top: 0.3px solid #cccccc;
+        border-left: 0;
+        border-right: 0;
+        border-bottom: 0;
+    }
+    .hearts{
+        padding: 20px 0;
+        text-align: center;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 25px;
+        color: #5A6978;
+        a{
+            color: #673ab7;
+        }
+        .heart{
+            display: inline-block;
+            -webkit-animation: animate 1s linear infinite;
+            animation: animate 1s linear infinite;
+        }
+    }
+}
+
+@keyframes animate {
+    0% {
+        transform: scale(1.4);
+    }
+    100% {
+        transform: scale(1);
+    } 
+}

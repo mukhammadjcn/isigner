@@ -156,10 +156,12 @@ body{
 
 // Video
 .video{
+    cursor: pointer;
     padding: 20px 40px 20px 20px;
     background-color: #fff;
     border-radius: 30px;
     display: inline-flex;
+    box-shadow: 0px 4px 100px rgba(74, 148, 154, 0.1);
     gap: 30px;
     &-information{
         .video-title{
@@ -199,6 +201,7 @@ body{
     padding: 30px 20px;
     border-radius: 20px;
     display: inline-block;
+    box-shadow: 0px 4px 100px rgba(74, 148, 154, 0.1);
     &-title{
         font-weight: 500;
         font-size: 20px;
@@ -259,6 +262,7 @@ body{
     &-img{
         img{
             border-radius: 20px;
+            width: 100%;
         }
     }
     &-information{
@@ -302,6 +306,91 @@ body{
                 vertical-align: text-top;
                 margin-left: 6px;
             }
+        }
+    }
+}
+
+//Clients
+.client{
+    display: inline-block;
+    &-img{
+        img{
+            border-radius: 44%;
+        }
+    }
+    &-name{
+        font-family: Rubik;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 36px;
+        text-align: center;
+        color: #362A43;
+        padding: 20px 0;
+    }
+    &-position{
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 22px;
+        text-align: center;
+        color: #636363;
+    }
+}
+
+//newsletter
+.newsletter{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    padding: 130px 0;
+    background-image: url('../images/Mask\ Group\ \(2\).png');
+    background-position: center;
+    background-size: 114% 152%;
+    background-repeat: no-repeat;
+    background-color: #362A43;
+    box-shadow: 0px 4px 100px rgba(74, 148, 154, 0.1);
+    border-radius: 33px;
+    &-text{
+        .newsletter-title{
+            font-weight: bold;
+            font-size: 48px;
+            line-height: 57px;
+            color: #FFFFFF;
+        }
+        .newsletter-label{
+            padding-top: 8px;
+            font-size: 16px;
+            line-height: 26px;
+            color: #FFFFFF;
+        }
+    }
+    .newsletter-form{
+        display: flex;
+        background: #84DCE3;
+        border-radius: 10px;
+        filter: drop-shadow(0px 4px 100px rgba(74, 148, 154, 0.1));
+        input{
+            background: #FFFFFF;
+            border: 4px solid #84DCE3;
+            padding: 0 70px 0 20px;
+            border-radius: 10px;
+            outline: none;
+            &::placeholder{
+                font-size: 16px;
+                line-height: 24px;
+                color: #606060;
+            }
+        }
+        button{
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            padding: 16px 24px;
+            border: none;
+            color: #362B44;
+            background: #84DCE3;
+            box-shadow: 0px 4px 100px rgba(74, 148, 154, 0.1);
+            border-radius: 0px 10px 10px 0px;
         }
     }
 }
