@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style/main.css">
     <link rel="icon" href="./images/rsz_music-ministry-icon-white.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Isigner</title>
 </head>
 <body>
@@ -20,12 +21,15 @@
                 <path d="M96.2986 23.192C95.5786 23.192 94.9866 22.984 94.5226 22.568C94.0746 22.136 93.8506 21.608 93.8506 20.984C93.8506 20.344 94.0746 19.808 94.5226 19.376C94.9866 18.944 95.5786 18.728 96.2986 18.728C97.0026 18.728 97.5786 18.944 98.0266 19.376C98.4906 19.808 98.7226 20.344 98.7226 20.984C98.7226 21.608 98.4906 22.136 98.0266 22.568C97.5786 22.984 97.0026 23.192 96.2986 23.192ZM110.296 0.199999L103.864 27.488H99.9041L106.336 0.199999H110.296Z" fill="#B48FDB"/>
             </svg>                
         </a>
-        <div class="navbar">
+        <div class="navbar" id="navLinks">
             <a href="#" class="nav-link">Home</a>
             <a href="#" class="nav-link">About</a>
             <a href="#" class="nav-link">Music</a>
             <a href="#" class="nav-link">Album</a>
             <a href="#" class="nav-link">Contact</a>
+            <div class="cancel_btn" onclick="closeMenu()">
+                <i class="far fa-times-circle"></i>
+            </div>
         </div>
         <div class="social-links">
             <a href="#" class="social-link">
@@ -57,6 +61,7 @@
                 <path d="M38.7501 17.5001H13.75C13.0599 17.5001 12.5 18.0601 12.5 18.75C12.5 19.4401 13.06 20 13.75 20H38.7501C39.4401 20 40.0001 19.44 40.0001 18.75C40.0002 18.06 39.4401 17.5001 38.7501 17.5001Z" fill="#B48FDB"></path>
             </svg>                        
         </div>
+
     </header>
 
     <!-- Intro -->
@@ -953,4 +958,17 @@
         </div>
     </footer>
 </body>
+<script>
+    var navbar = document.getElementById("navLinks");
+    function showMenu(){
+            navbar.style.left = '0px';
+        }
+
+    function closeMenu(){
+        navbar.style.left = '-5000px';
+    }
+
+    
+
+</script>
 </html>
