@@ -39,6 +39,9 @@ body{
     width: 50%;
     height: 100%;
 }
+.burger-menu{
+    display: none;
+}
 
 
 //Header
@@ -432,5 +435,191 @@ body{
 @media (max-width:576px){
     .container{
         width: 90%;
+    }
+    .section-prg{
+        width: auto !important;
+    }
+    .dp-none{
+        display: none;
+    }
+    
+    // Header
+    .header{
+        padding: 20px;
+        .navbar, .social-links{
+            display: none;
+        }
+        .burger-menu{
+            display: block;
+        }
+    }
+
+    // Intro
+    .intro{
+        padding-bottom: 30px;
+        .container{
+            flex-direction: column-reverse;
+            gap: 30px;
+            .intro-img{
+                img{
+                    width: 90%;
+                }
+                .big-ellipce{
+                    width: 100%;
+                    left: 30px;
+                }
+                .mini-ellipce{
+                    width: 50%;
+                    left: 0;
+                    top: 90px; 
+                }
+                .music-icon-2{
+                    width: 20%;
+                }
+                .music-icon-1{
+                    width: 20%;
+                    right: 0;
+                }
+            }
+            .intro-text{
+                .intro-title{
+                    font-size: 54px;
+                    line-height: 46px;
+                }
+            }
+        }
+    }
+
+    // release
+    .release{
+        text-align: center;
+        .container{
+            .release-note{
+                flex-direction: column !important;
+                gap: 10px;
+            }
+            .music{
+                .music-img{
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    // About me
+    .about-me{
+        text-align: center;
+        flex-direction: column-reverse;
+        .about-img{
+            img{
+                width: 90%;
+            }
+            .about-bg-1, .about-bg-2{
+                height: 100%;
+            }
+        }
+        .about-text{
+            text-align: center;
+            .section-prg{
+                width: auto;
+            }
+        }
+    }
+
+    // Upcoming shows
+    .shows{
+        .section-prg{
+            width: auto;
+        }
+        .show{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            .show-information{
+                .show-time{
+                    gap: 20px;
+                }
+            }
+            .show-order{
+                .show-order-title{
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    // Videos
+    .videos{
+        .box{
+            .video{
+                padding: 20px;
+            }
+            .video-main{
+                .video-img{
+                    img{
+                        width: 300px;
+                    }
+                }
+            }
+            .video-all{
+                width: 100%;
+                flex-basis: 100%;
+                .video{
+                    flex-direction: column;
+                    align-items: center;
+                    .video-label{
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+
+    //blogs
+    .blogs{
+        .release-note, .box{
+            flex-direction: column;
+        }
+    }
+
+    // Clients
+    .clients{
+       .container{
+            .box{
+                justify-content: center;
+                .client{
+                    &:nth-child(1), &:nth-child(2), &:nth-child(3){
+                        display: none;
+                    }
+                }
+            }
+       }
+    }
+
+    //newsllter
+    .newsletter{
+        flex-direction: column;
+        padding: 64px 10px;
+        text-align: center;
+        .newsletter-form{
+            flex-direction: column;
+            input{
+                height: 60px;
+            }
+            button{
+                border-radius: 0 0 10px 10px;
+            }
+        }
+    }
+
+    .footer{
+        .footer-info{
+            flex-direction: column;
+            gap: 10px;
+            padding: 40px 0;
+        }
     }
 }

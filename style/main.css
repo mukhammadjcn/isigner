@@ -108,6 +108,8 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-shadow: 0px 4px 100px rgba(74, 148, 154, 0.1);
+          box-shadow: 0px 4px 100px rgba(74, 148, 154, 0.1);
   padding: 20px 60px 20px 20px;
   background-color: #fff;
   border-radius: 12px;
@@ -556,6 +558,10 @@ body {
   z-index: -1;
   width: 50%;
   height: 100%;
+}
+
+.burger-menu {
+  display: none;
 }
 
 .header {
@@ -1098,6 +1104,175 @@ body {
 @media (max-width: 576px) {
   .container {
     width: 90%;
+  }
+  .section-prg {
+    width: auto !important;
+  }
+  .dp-none {
+    display: none;
+  }
+  .header {
+    padding: 20px;
+  }
+  .header .navbar, .header .social-links {
+    display: none;
+  }
+  .header .burger-menu {
+    display: block;
+  }
+  .intro {
+    padding-bottom: 30px;
+  }
+  .intro .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    gap: 30px;
+  }
+  .intro .container .intro-img img {
+    width: 90%;
+  }
+  .intro .container .intro-img .big-ellipce {
+    width: 100%;
+    left: 30px;
+  }
+  .intro .container .intro-img .mini-ellipce {
+    width: 50%;
+    left: 0;
+    top: 90px;
+  }
+  .intro .container .intro-img .music-icon-2 {
+    width: 20%;
+  }
+  .intro .container .intro-img .music-icon-1 {
+    width: 20%;
+    right: 0;
+  }
+  .intro .container .intro-text .intro-title {
+    font-size: 54px;
+    line-height: 46px;
+  }
+  .release {
+    text-align: center;
+  }
+  .release .container .release-note {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    gap: 10px;
+  }
+  .release .container .music .music-img img {
+    width: 100%;
+  }
+  .about-me {
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .about-me .about-img img {
+    width: 90%;
+  }
+  .about-me .about-img .about-bg-1, .about-me .about-img .about-bg-2 {
+    height: 100%;
+  }
+  .about-me .about-text {
+    text-align: center;
+  }
+  .about-me .about-text .section-prg {
+    width: auto;
+  }
+  .shows .section-prg {
+    width: auto;
+  }
+  .shows .show {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 20px;
+  }
+  .shows .show .show-information .show-time {
+    gap: 20px;
+  }
+  .shows .show .show-order .show-order-title {
+    text-align: center;
+  }
+  .videos .box .video {
+    padding: 20px;
+  }
+  .videos .box .video-main .video-img img {
+    width: 300px;
+  }
+  .videos .box .video-all {
+    width: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .videos .box .video-all .video {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .videos .box .video-all .video .video-label {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .blogs .release-note, .blogs .box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .clients .container .box {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .clients .container .box .client:nth-child(1), .clients .container .box .client:nth-child(2), .clients .container .box .client:nth-child(3) {
+    display: none;
+  }
+  .newsletter {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 64px 10px;
+    text-align: center;
+  }
+  .newsletter .newsletter-form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .newsletter .newsletter-form input {
+    height: 60px;
+  }
+  .newsletter .newsletter-form button {
+    border-radius: 0 0 10px 10px;
+  }
+  .footer .footer-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
+    padding: 40px 0;
   }
 }
 /*# sourceMappingURL=main.css.map */
