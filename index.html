@@ -957,6 +957,10 @@
             <p class="hearts">Made with <span class="heart">💜</span>  by <a href="https://l.instagram.com/?u=http%3A%2F%2Fmyurls.co%2Fmukhammadjon&amp;e=ATMiULKGvg6xGXRDsdYWbQswOZ8r7EzRZUIP8GMjkle27iazi-Py2hbkz5fC8mKluxBUQ7HIyQGaVHljVoNHBQ&amp;s=1">Mukhammadjon</a></p>
         </div>
     </footer>
+
+    <div class="loader">
+        <div class="dots-loader"></div>
+    </div>
 </body>
 <script>
     var navbar = document.getElementById("navLinks");
@@ -967,8 +971,11 @@
     function closeMenu(){
         navbar.style.left = '-5000px';
     }
-
-    
-
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    setTimeout(function(){
+        $('.loader').fadeToggle();
+    }, 1500);
 </script>
 </html>
